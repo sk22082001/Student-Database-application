@@ -43,7 +43,7 @@ stages:
       displayName: 'Set server image name'
 
     - script: |
-        docker run --rm $(client_image_name) npm run test
+        docker run --rm student-data-app-client npm run test
       displayName: 'Run client tests'
 
     # - script: |
