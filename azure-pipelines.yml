@@ -43,9 +43,9 @@ stages:
       displayName: 'Set server image name'
 
     - script: |
-        docker run --rm $(client_image_name) npm test
+        docker run --rm $(client_image_name) npm run test
       displayName: 'Run client tests'
 
     - script: |
-        docker run --rm $(server_image_name) pytest
+        docker run --rm $(server_image_name) npm run test
       displayName: 'Run server tests'
