@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const { app, server } = require("../index");
 
 beforeEach(async () => {
-  const testMongoURL = "mongodb://localhost:27017/testDatabase";
+  const testMongoURL = "mongodb://mongodb:27017/test-db";
 
   if (mongoose.connection.readyState !== 0) {
     await mongoose.disconnect();
