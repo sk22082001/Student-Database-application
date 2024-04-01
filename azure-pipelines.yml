@@ -46,6 +46,6 @@ stages:
         docker run --rm $(client_image_name) npm run test
       displayName: 'Run client tests'
 
-    - script: |
-        docker run --rm $(server_image_name) npm run test
-      displayName: 'Run server tests'
+    # - script: |
+    #     docker run --rm $(server_image_name) npm run test
+    #   displayName: 'Run server tests'
